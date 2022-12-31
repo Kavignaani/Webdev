@@ -1,0 +1,118 @@
+*{
+    /* font-family: "Comic Sans MS","cursive"; */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.pic {
+    margin-left: 20px;
+        /* margin-top: 10px; */
+     width: 250px;
+     height: 79.25px;   
+    }
+.hyper {
+    text-decoration: none;
+    border : 2px solid grey;
+    cursor: pointer;
+    margin : 10px ;
+    padding: 10px;
+    display: flex;
+    align-items: center;    
+    width : 10%;
+    justify-content: center;
+}
+.super {
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    top : 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.leftup {
+    position: absolute;
+    right : 50px;
+    top : 30px;
+    cursor: pointer;
+    border : 2px solid grey;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pink{
+    border: 5px solid pink;
+}
+.titled{
+    margin: 10px;
+}
+
+.inp{ 
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+    border: grey 2px solid;
+    width: 100px;
+    height: 30px;
+    
+}
+
+.labels{
+    height: 30px;
+    margin-left: 5px;
+    justify-content: left;
+}
+
+.oct{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    float : left;
+    width: 12%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.row1{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.qrtr1{
+width: 25%;}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    cursor: pointer;
+    justify-content: center;
+}
+
+.time{
+    margin-bottom: 10px;
+}
+.final{
+    cursor: pointer;
+    width: 400%;
+    align-self: center;
+    height: 40px;
+    margin: 10px;
+}

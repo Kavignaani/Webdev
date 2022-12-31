@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Labs | FabHeads</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    
+</head>
+<body>
+    <script src="{{ url_for('static',filename='js/mainpage.js') }}"></script> 
+    <div>
+        <img src="{{ url_for('static',filename='images/fabheads-logo-with-R-transparent-blue.png') }}" alt="" class="pic">
+        <a class="link leftup" href="/">Home</a>
+        <h3 class="titled">Select employee and fill work time sheet</h3>
+    </div>
+        <form class="primary">
+            <div class="row1">
+
+                <div class="qrtr1">
+                    <label for="empname" >Employee Name :</label>  
+                    
+                </div>
+                <div class="qrtr1">
+                    <select id="name" name="name" value="empname">
+
+                        <option value="None" selected>Choose from below</option>
+                        <option value="Manikandan">Kuralarasan</option>
+                        <option value="Pravin">Pravin</option>
+                        <option value="Rakshith">Rakshith</option>
+                        <option value="Manikandan">Manikandan</option>
+                        <option value="Veerappan">Veerappan</option>
+                        <option value="Kaviaiasu">Kaviaiasu</option>
+                        <option value="Gopal">Gopal</option>
+                        <option value="Perumal">Perumal</option>
+                        <option value="Natarajan">Natarajan</option>
+                        <option value="Shobam">Shobam</option>
+                        <option value="Shankar">Shankar</option>
+                        <option value="Logesh">Logesh</option>
+                    </select>
+                </div>
+            </div>
+    
+            <br>
+            <div class="row2">
+
+                <label class="oct labels">Date :</label><input type="date" id="date" name="date" class="inp oct">
+                
+                
+                <label class="oct labels">Intime :</label><input type="time" id="intime" name="intime" class="inp oct">   
+                
+                
+                <label class="oct labels">Outtime :</label><input type="time" id="outtime" name="outtime" class="inp oct">
+                
+                
+                <label class="oct labels">Submit :</label><input type="submit" id="submit" name="submit" class="inp oct" onclick="createbox(); return false;"/>
+                
+            </div>
+        </form>
+        <form class="secondary">
+            
+        </form>
+    
+
+</body>
+</html>
+
