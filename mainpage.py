@@ -30,7 +30,8 @@ def aml():
 
 @app.route('/submit', methods=['GET','POST'])
 def getvalue():
-  if (request.method=='GET') :
+  print('Entering')
+  if (request.method=='POST') :
     print("Step1over")     
     name=request.POST['name']
     date=request.POST['date']
