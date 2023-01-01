@@ -30,29 +30,34 @@ def aml():
 
 @app.route('/submit', methods=['GET','POST'])
 def getvalue():
-  print("Step1over")     
-  name=request.form['name']
-  date=request.form['date']
-  intime=request.form['intime']
-  outtime=request.form['outtime']
-
-  inh=int(intime[0:2])
-  outh=int(outtime[0:2])
-  intm=int(intime[3:5])
-  if intm > 0 :
-    k=1
+  if (request.method=='GET') :
+    print("Step1over")     
+    name=request.POST['name']
+    date=request.POST['date']
+    intime=request.POST['intime']
+    outtime=request.POST['outtime']
+    print(name,date)
+    inh=int(intime[0:2])
+    outh=int(outtime[0:2])
+    intm=int(intime[3:5])
+    if intm > 0 :
+      k=1
+    else :
+      k=0
+    global rows
+    rows=outh-inh+k
+    print("Steip2")
+    x=[]
+    for i in range(1,rows+1):
+      k="PJ"+str(i)
+      x.extend(request.POST[k])
+    print("WORKED")
+    print(x)
+    return render_template('AML.html')
   else :
-    k=0
-  global rows
-  rows=outh-inh+k
-  print("Steip2")
-  x=[]
-  for i in range(1,rows+1):
-    k="PJ"+str(i)
-    x.extend(request.form[k])
-  print("WORKED")
-  print(x)
-  return render_template('AML.html')
+    return "HEllo"
+
+
 
 
 if __name__ == '__main__':
